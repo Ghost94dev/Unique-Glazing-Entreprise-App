@@ -3,7 +3,7 @@
       	<div class="overlay"></div>
         <div class="container">
           <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{ asset('images/bg_12.jpg') }});">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{ asset('images/bg_0012.png') }});">
           		<h3 class="vr">Glass & Aluminium Solutions</h3>
           	</div>
 	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -21,7 +21,7 @@
       	<div class="overlay"></div>
         <div class="container">
           <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{ asset('images/bg_22.jpg') }});">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{ asset('images/bg_00013.png') }});">
           		<h3 class="vr">Since - 2010</h3>
           	</div>
 	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
