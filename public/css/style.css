@@ -8048,7 +8048,7 @@ h1, h2, h3, h4, h5,
     padding-left: 22px;
     padding-right: 22px;
     font-weight: 600;
-    color: #ffffff;
+    color: #14213d;
     border-radius: 999px;
     opacity: 1 !important;
     -webkit-transition: color .3s ease, background-color .3s ease, -webkit-box-shadow .3s ease, -webkit-transform .3s ease;
@@ -8061,10 +8061,10 @@ h1, h2, h3, h4, h5,
       content: "";
       inset: 6px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.16);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      -webkit-box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+      background: rgba(20, 33, 61, 0.06);
+      border: 1px solid rgba(20, 33, 61, 0.1);
+      -webkit-box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
       opacity: 0;
       -webkit-transform: scale(0.92);
       -ms-transform: scale(0.92);
@@ -8092,7 +8092,7 @@ h1, h2, h3, h4, h5,
       transition: opacity .3s ease, transform .3s ease;
       transition: opacity .3s ease, transform .3s ease, -webkit-transform .3s ease; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #ffffff;
+      color: #0033c7;
       -webkit-transform: translateY(-1px);
       -ms-transform: translateY(-1px);
       transform: translateY(-1px);
@@ -8166,14 +8166,14 @@ h1, h2, h3, h4, h5,
         color: #fff;
         background: #0033c7; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #ffffff; }
+    color: #0033c7; }
     .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
       opacity: 1;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1);
-      background: rgba(0, 51, 199, 0.22);
-      border-color: rgba(255, 255, 255, 0.2); }
+      background: rgba(0, 51, 199, 0.12);
+      border-color: rgba(0, 51, 199, 0.16); }
     .ftco-navbar-light .navbar-nav > .nav-item.active > a:after {
       opacity: 1;
       -webkit-transform: scale(1);
