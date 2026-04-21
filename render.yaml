@@ -3,9 +3,19 @@ services:
     name: unique-glazing-app
     runtime: php
     plan: free
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: CACHE_STORE
+        value: file
+      - key: SESSION_DRIVER
+        value: file
+      - key: QUEUE_CONNECTION
+        value: sync
     buildCommand: |
       composer install --no-dev --optimize-autoloader
-      php artisan key:generate
       php artisan config:cache
       php artisan route:cache
       php artisan view:cache
