@@ -18,4 +18,8 @@ RUN touch database/database.sqlite
 EXPOSE 10000
 
 
-CMD php artisan migrate --force && php artisan storage:link && php -S 0.0.0.0:10000 -t public
+CMD php artisan migrate --force && \
+php artisan storage:link || true && \
+php artisan config:cache && \
+php artisan view:cache && \
+php -S 0.0.0.0:10000 -t public
