@@ -8,6 +8,13 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
+ENV APP_ENV=production \
+    APP_DEBUG=false \
+    CACHE_STORE=file \
+    SESSION_DRIVER=file \
+    QUEUE_CONNECTION=sync \
+    PORT=10000
+
 COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
@@ -21,11 +28,4 @@ RUN touch database/database.sqlite
 
 EXPOSE 10000
 
-
-CMD php artisan optimize:clear && \
-php artisan config:clear && \
-php artisan cache:clear && \
-php artisan config:cache && \
-php artisan route:cache && \
-php artisan view:cache && \
-php -S 0.0.0.0:10000 -t public
+CMD ["sh", "-c", "php -S 0.0.0.0:${PORT} -t public"]
