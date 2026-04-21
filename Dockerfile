@@ -12,6 +12,10 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 
+# ensure public assets exist
+RUN ls -la public/css || true
+RUN ls -la public/js || true
+
 # Create SQLite DB (for testing)
 RUN touch database/database.sqlite
 
