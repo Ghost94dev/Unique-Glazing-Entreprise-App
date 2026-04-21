@@ -10,12 +10,12 @@
 
 <div class="collapse navbar-collapse" id="ftco-nav">
 <ul class="navbar-nav ml-auto">
-<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-<li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-<li class="nav-item"><a href="/project" class="nav-link">Project</a></li>
-<li class="nav-item"><a href="/services" class="nav-link">Services</a></li>
-<li class="nav-item"><a href="/gallery" class="nav-link">Gallery</a></li>
-<li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+<li class="nav-item {{ request()->segment(1) === null ? 'active' : '' }}"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item {{ request()->is('about') ? 'active' : '' }}"><a href="/about" class="nav-link">About</a></li>
+<li class="nav-item {{ request()->is('project') ? 'active' : '' }}"><a href="/project" class="nav-link">Project</a></li>
+<li class="nav-item {{ request()->is('services') ? 'active' : '' }}"><a href="/services" class="nav-link">Services</a></li>
+<li class="nav-item {{ request()->is('gallery') ? 'active' : '' }}"><a href="/gallery" class="nav-link">Gallery</a></li>
+<li class="nav-item {{ request()->is('contact') ? 'active' : '' }}"><a href="/contact" class="nav-link">Contact</a></li>
 </ul>
 </div>
 

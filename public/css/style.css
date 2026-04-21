@@ -8034,24 +8034,95 @@ h1, h2, h3, h4, h5,
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
+  .ftco-navbar-light .navbar-nav > .nav-item {
+    margin: 0 4px; }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 14px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 400;
-    color: #000000;
-    opacity: 1 !important; }
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: .04em;
+    padding-top: .85rem;
+    padding-bottom: .85rem;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 999px;
+    opacity: 1 !important;
+    -webkit-transition: color .3s ease, background-color .3s ease, -webkit-box-shadow .3s ease, -webkit-transform .3s ease;
+    transition: color .3s ease, background-color .3s ease, -webkit-box-shadow .3s ease, -webkit-transform .3s ease;
+    -o-transition: color .3s ease, background-color .3s ease, box-shadow .3s ease, transform .3s ease;
+    transition: color .3s ease, background-color .3s ease, box-shadow .3s ease, transform .3s ease;
+    transition: color .3s ease, background-color .3s ease, box-shadow .3s ease, transform .3s ease, -webkit-box-shadow .3s ease, -webkit-transform .3s ease; }
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before {
+      position: absolute;
+      content: "";
+      inset: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      -webkit-box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+      opacity: 0;
+      -webkit-transform: scale(0.92);
+      -ms-transform: scale(0.92);
+      transform: scale(0.92);
+      -webkit-transition: opacity .3s ease, -webkit-transform .3s ease;
+      transition: opacity .3s ease, -webkit-transform .3s ease;
+      -o-transition: opacity .3s ease, transform .3s ease;
+      transition: opacity .3s ease, transform .3s ease;
+      transition: opacity .3s ease, transform .3s ease, -webkit-transform .3s ease; }
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:after {
+      position: relative;
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0;
+      -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      transform: scale(0.6);
+      -webkit-transition: opacity .3s ease, -webkit-transform .3s ease;
+      transition: opacity .3s ease, -webkit-transform .3s ease;
+      -o-transition: opacity .3s ease, transform .3s ease;
+      transition: opacity .3s ease, transform .3s ease;
+      transition: opacity .3s ease, transform .3s ease, -webkit-transform .3s ease; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #000000; }
+      color: #ffffff;
+      -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+      transform: translateY(-1px);
+      text-decoration: none; }
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before, .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus:before {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:after, .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus:after {
+        opacity: .9;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link span,
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+      z-index: 1; }
     @media (max-width: 991.98px) {
+      .ftco-navbar-light .navbar-nav > .nav-item {
+        margin: 2px 0; }
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-        padding-left: 0;
-        padding-right: 0;
+        display: inline-flex;
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 18px;
+        padding-right: 18px;
         padding-top: .9rem;
         padding-bottom: .9rem;
-        color: rgba(255, 255, 255, 0.7); }
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.92); }
         .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
           color: #fff; } }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
@@ -8095,7 +8166,19 @@ h1, h2, h3, h4, h5,
         color: #fff;
         background: #0033c7; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #0033c7; }
+    color: #ffffff; }
+    .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      background: rgba(0, 51, 199, 0.22);
+      border-color: rgba(255, 255, 255, 0.2); }
+    .ftco-navbar-light .navbar-nav > .nav-item.active > a:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item.active > a {
         color: #fff; } }
@@ -8150,9 +8233,14 @@ h1, h2, h3, h4, h5,
       font-size: 16px;
       letter-spacing: .1em; }
     .ftco-navbar-light.scrolled .nav-link {
-      padding-top: 0.9rem !important;
-      padding-bottom: 0.9rem !important;
+      padding-top: 0.75rem !important;
+      padding-bottom: 0.75rem !important;
       color: #000000 !important; }
+      .ftco-navbar-light.scrolled .nav-link:before {
+        background: rgba(0, 51, 199, 0.08);
+        border-color: rgba(0, 0, 0, 0.06);
+        -webkit-box-shadow: 0 12px 24px rgba(9, 24, 58, 0.12);
+        box-shadow: 0 12px 24px rgba(9, 24, 58, 0.12); }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #0033c7 !important; }
     .ftco-navbar-light.scrolled.awake {
