@@ -106,8 +106,8 @@
 						<div class="service-card">
 							<img src="{{ asset('images/service-fameless.jpeg') }}" alt="Frameless Glass Works">
 							<div class="service-overlay">
-								<h3>Frameless Glass Works</h3>
-								<p>Elegant frameless glass installations that create a clean, modern, and open look.</p>
+								<h3>Tempered Glass For Showers Cubicles</h3>
+								<p>High-strength tempered glass designed specifically for shower enclosures and cubicles</p>
 							</div>
 						</div>
 					</div>
@@ -137,9 +137,8 @@
 						<div class="service-card">
 							<img src="{{ asset('images/service-sliding-bath.jpeg') }}" alt="Door Types">
 							<div class="service-overlay">
-								<h3>Sliding, Hinged & Swing Doors</h3>
-								<p>Custom door solutions including sliding, hinged, and swing door systems for various
-									spaces.</p>
+								<h3>UPVC Sliding Windows with arc</h3>
+								<p>Modern UPVC sliding windows with an elegant arc design for a contemporary look.</p>
 							</div>
 						</div>
 					</div>
@@ -170,9 +169,8 @@
 						<div class="service-card">
 							<img src="{{ asset('images/aluminium-double-glazing.jpeg') }}" alt="Glazing">
 							<div class="service-overlay">
-								<h3>Double & Single Glazing</h3>
-								<p>Energy-efficient single and double glazing options for improved insulation and
-									comfort.</p>
+								<h3>Double Glazing</h3>
+								<p>Energy-efficient double glazing options for improved insulation and comfort.</p>
 							</div>
 						</div>
 					</div>
