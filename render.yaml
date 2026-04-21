@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: unique-glazing
+    runtime: php
+    buildCommand: |
+      composer install --no-dev
+      php artisan config:cache
+    startCommand: php -S 0.0.0.0:$PORT -t public
