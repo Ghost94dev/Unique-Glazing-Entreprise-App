@@ -1,4 +1,4 @@
-<section class="home-slider js-fullheight owl-carousel bg-white">
+<section class="home-slider js-fullheight owl-carousel glazing-hero-slider">
       <div class="slider-item js-fullheight">
       	<div class="overlay"></div>
         <div class="container">
